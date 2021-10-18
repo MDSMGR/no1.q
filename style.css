@@ -1,0 +1,128 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%; /* 横幅いっぱい */
+  height: 50px;
+  background-color: #FF9A4B;
+}
+
+main{
+  display:flex;
+  width:100%;
+  margin-top: 50px;
+  margin-bottom:50px;
+  justify-content: center;
+}
+
+.step{
+  position:absolute;
+  top:0px;
+  left:0px;
+  background-color: #FF9A4B;
+  color:white;
+}
+
+
+
+.box1 {
+
+  width: 300px;
+  background-color: #EEEEEE;
+  position:relative;
+  padding :10px;
+  margin-right:30px;
+
+}
+
+
+.img1 {
+  background-image:url(img/flow01.png);
+  background-size: cover;
+  height: 150px;
+  background-position: bottom;
+}
+.box2 {
+  width: 300px;
+  background-color: #EEEEEE;
+  position:relative;
+  padding :10px;
+  margin-right:30px;
+}
+
+.img2 {
+  background-image:url(img/flow02.png);
+  background-size: cover;
+  height: 150px;
+  background-position: bottom;
+}
+.box3 {
+  width: 300px;
+  background-color: #EEEEEE;
+  position:relative;
+  padding :10px;
+}
+
+
+
+.img3 {
+  background-image:url(img/flow03.png);
+  background-size: cover;
+  height: 150px;
+  background-position: bottom;
+}
+
+h3 {
+  margin-top:15px;
+  margin-bottom:5px;
+}
+
+
+
+footer {
+  width: 100%; /* 横幅いっぱい */
+  height: 50px; /* 高さpx */
+  background-color: #AAAAAA; /* */
+}
+
+
+@media screen and (max-width: 768px) {
+  main {
+      width:100%;
+      display: block;
+      margin: 50px 5%;
+
+    }
+
+  /* 略 */
+
+
+  .box1 {
+    width :90% ;
+    margin-bottom: 20px;
+  }
+  .img1 {
+    background-position: cover;
+  }
+
+  .box2 {
+    width:90%;
+    margin-bottom: 20px;
+  }
+  .img2 {
+    background-position: cover;
+  }
+
+  .box3 {
+    width:90%;
+  }
+
+  .img3 {
+    background-position: cover;
+  }
+
+}
